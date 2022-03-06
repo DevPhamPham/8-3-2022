@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  font: optional;
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(-225deg, rgb(74 135 172), rgb(110 109 159));
+}
+/* reset css */
+
+#clickMe {
+  position: absolute;
+  z-index: 9999;
+  padding: 10px;
+  outline: none;
+  border: none;
+  top: 50%;
+  left: 50%;
+  opacity: 0.9;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 5px 15px black;
+  font-size: large;
+  border-radius: 13px;
+  background-color: rgb(192, 176, 202);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: monospace, Courier, "Courier New";
+  display: inline-block;
+  text-align: center;
+  text-shadow: 10px 10px 5px rgba(51, 51, 51, 0.203);
+  height: 10%;
+  width: 30vw;
+  overflow: hidden;
+  line-height: 68.4px;
+  transition: ease 0.34s;
+  animation: blindShadow 5s linear infinite;
+}
+#clickMe div {
+  color: rgb(85 26 139);
+  box-shadow: 5px 0px 0px #ffffff;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  animation: textTyping 5s linear infinite;
+}
+@keyframes textTyping {
+  0%,
+  90%,
+  100% {
+    width: 0px;
+  }
+  30%,
+  60% {
+    width: 432.96px;
+  }
+}
+#clickMe:hover {
+  cursor: pointer;
+  background-color: rgb(153, 124, 172);
+  box-shadow: 0px 5px 20px black;
+  opacity: 0.75;
+  box-shadow: 0px 0px 15px #ccc;
+}
+#clickMe:active {
+  background-color: #0066a4;
+  text-shadow: 10px -21px 1px rgba(51, 51, 51, 0.548);
+}
+#universe {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+}
+#firework {
+  display: none; 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+}
+.opendis {
+  display: block !important;
+}
+.closedis{
+    display: none !important;
+}
+.backgroundFireword{
+    background-color: #00000f !important; 
+    background: linear-gradient(to bottom, #020111 60%,#20202c 100%) !important; 
+}
