@@ -218,8 +218,8 @@ function RunFireWork() {
     function onMouse( e ) 
     {
         var mouse = Utils.mouse( e ); 
-        to.px =  ( mouse.centerx * 0.95 );
-        to.py = -( mouse.centery * 0.95 );
+        to.px =  ( mouse.centerx * 1.5 );
+        to.py = -( mouse.centery * 1.5 );
     };
     
     // on click/tap 
