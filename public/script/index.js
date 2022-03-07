@@ -33,6 +33,6 @@ function init() {
     }
 }
 let name = localStorage.getItem("name");
-document.querySelector("#firework .intro").innerHTML = ` Chúc mừng ngày 8/3 mãi xinh đẹp như bông hồng nhá
-<br> Riêng ${name} thì chúc những lời chúc tốt đẹp nhất, luôn xinh đẹp, hạnh phúc và vui vẻ không chỉ ngày 8/3 mà cả những ngày khác nữa.   
+document.querySelector("#firework .intro").innerHTML = ` Chúc mừng ngày 8/3 mãi xinh đẹp như bông hồng nhá.
+<br> <p style="font-size:55%;">Riêng ${name} thì chúc những lời chúc tốt đẹp nhất, luôn xinh đẹp, hạnh phúc và vui vẻ không chỉ ngày 8/3 mà cả những ngày khác nữa. </p>  
 `
