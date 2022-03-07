@@ -1,3 +1,13 @@
 if (document.querySelector(".container").offsetWidth <= 500) {
-	document.querySelector(".background").src = "./dang/8th-March/Images/background-phone.jpg";
+	document.querySelector(".background").src =
+		"./dang/8th-March/Images/background-phone.jpg";
+}
+function move() {
+	const input = document.querySelector(".input > input");
+	if (input.value != "") {
+		location.replace("./app/app.html");
+		localStorage.setItem("name", input.value);
+	} else {
+		alert("Nhập tên cái đi nè :3");
+	}
 }
