@@ -4,6 +4,8 @@ window.onload = function () {
   }, 1000);
   setTimeout(function () {
     alert("Press F11 key to make it more vivid!");
+    document.querySelector("#bodymodal div").classList.add("textfromright");
+    document.querySelector("#headermodal>div").classList.add("textfromright");
     init();
   }, 2000);
 };
