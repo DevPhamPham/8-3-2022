@@ -99,6 +99,10 @@ body {
   z-index: 100;
   background-color: transparent;
 }
+#backgroundFlower{
+  position: absolute;
+  z-index: -100;
+}
 #firework > .intro {
   font-family: "Syne Mono", monospace;
   color: #fff;

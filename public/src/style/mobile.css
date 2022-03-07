@@ -70,4 +70,14 @@
   #modal #bodymodal{
     font-size: 18px;
   }
+  #backgroundFlower{
+    height:100%;
+    width:100%;
+    top:70%;
+    transform: translateY(-50%);
+  }
+  #backgroundFlower>img{
+    /* height: 100%; */
+    width: 100%;
+  }
 }
