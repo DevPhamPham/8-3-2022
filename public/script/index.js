@@ -18,4 +18,8 @@ function init() {
             RunFireWork();
         },450)
     }
+    //endmodal
+    document.querySelector("#endmodal>div").onclick = function () {
+      document.getElementById("modal").classList.add("closedis");
+    }
 }
