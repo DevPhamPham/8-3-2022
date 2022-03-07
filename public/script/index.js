@@ -19,7 +19,14 @@ function init() {
         },450)
     }
     //endmodal
-    document.querySelector("#endmodal>div").onclick = function () {
-      document.getElementById("modal").classList.add("closedis");
+    document.querySelector("#endmodal").onclick = function () {
+      document.getElementById("framemodal").classList.add("animationclose");
+      setTimeout(function (){
+        document.getElementById("modal").classList.add("closedis"); 
+        setTimeout(function () {
+          document.querySelector("#clickMe").classList.add("animationopen");
+          document.querySelector("#clickMe").classList.remove("closedis");
+        },250)
+      },600)
     }
 }

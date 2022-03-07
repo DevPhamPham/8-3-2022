@@ -22,52 +22,55 @@ body {
 }
 /* reset css */
 
-#clickMe {
-  position: absolute;
-  z-index: 9999;
-  padding: 10px;
-  outline: none;
-  border: none;
-  top: 50%;
-  left: 50%;
-  opacity: 0.9;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 5px 15px black;
-  font-size: large;
-  border-radius: 13px;
-  background-color: rgb(192, 176, 202);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 2em;
-  font-family: monospace, Courier, "Courier New";
-  display: inline-block;
-  text-align: center;
-  text-shadow: 10px 10px 5px rgba(51, 51, 51, 0.203);
-  height: 10%;
-  width: 30vw;
-  overflow: hidden;
-  line-height: 68.4px;
-  transition: ease 0.34s;
-  animation: blindShadow 5s linear infinite;
+@media (min-width: 768px) {
+  #clickMe {
+    position: absolute;
+    z-index: 9999;
+    padding: 10px;
+    outline: none;
+    border: none;
+    top: 50%;
+    left: 50%;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 15px black;
+    font-size: large;
+    border-radius: 13px;
+    background-color: rgba(53, 0, 86);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: monospace, Courier, "Courier New";
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 5px 20px black;
+    text-shadow: 10px 10px 5px rgba(146, 145, 145, 0.5);
+    height: 10%;
+    width: 30vw;
+    overflow: hidden;
+    line-height: 68.4px;
+    transition: ease 0.34s;
+    animation: blindShadow 5s linear infinite;
+  }
+  @keyframes textTyping {
+    0%,
+    90%,
+    100% {
+      width: 0px;
+    }
+    30%,
+    60% {
+      width: 100%;
+    }
+  }
 }
 #clickMe div {
-  color: rgb(85 26 139);
+  color: rgb(255, 255, 255);
   box-shadow: 5px 0px 0px #ffffff;
   display: inline-block;
   position: relative;
   overflow: hidden;
   animation: textTyping 5s linear infinite;
-}
-@keyframes textTyping {
-  0%,
-  90%,
-  100% {
-    width: 0px;
-  }
-  30%,
-  60% {
-    width: 432.96px;
-  }
 }
 #clickMe:hover {
   cursor: pointer;
@@ -212,4 +215,27 @@ body {
   top:50%;
   right:10%;
   transform: translateY(-50%);
+}
+.animationclose{
+  animation: closeAnimation 0.6s ease !important;
+}
+.animationopen {
+  animation: openAnimation 0.6s ease !important;
+  /* display: block !important; */
+}
+@keyframes closeAnimation {
+  from {
+    transform: translate(-50%,0%);
+  }
+  to {
+    transform: translate(-50%,-300%);
+  }
+}
+@keyframes openAnimation {
+  from {
+    transform: translate(-50%,150%);
+  }
+  to {
+    transform: translate(-50%,0%);
+  }
 }
